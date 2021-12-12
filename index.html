@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="./src/bg.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="./src/bg.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>Split Video on Page Scroll</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eius sint excepturi ut asperiores animi aliquid magnam exercitationem, perferendis eaque quia magni. Perferendis voluptatum, voluptatibus labore illum quasi libero eum.
+        Placeat laboriosam excepturi esse cum deleniti aperiam quisquam possimus nisi id autem beatae saepe molestias debitis voluptatibus quibusdam est incidunt, perferendis odio doloribus, minima ipsum, quae dolor. Modi, inventore enim?
+        Qui expedita aliquam error numquam nulla repudiandae corporis ipsam assumenda quod ex! Quia quo quasi inventore minus non totam, rerum nihil at iure, veniam aspernatur fugiat facere itaque incidunt sit?
+        Placeat ipsam soluta temporibus iste cum at esse veniam assumenda aperiam officia neque, commodi deserunt, aut aliquid. Non, deserunt inventore! Temporibus quis, dolor quaerat excepturi mollitia maiores. Velit, esse ratione?
+        Officiis sed quod laborum nam neque et quos perspiciatis labore laudantium ullam, consectetur recusandae alias nihil illo odit eligendi in asperiores numquam voluptas ad aperiam? Pariatur harum voluptas ratione itaque. Placeat ipsam soluta temporibus iste cum at esse veniam assumenda aperiam officia neque, commodi deserunt, aut aliquid. Non, deserunt inventore! Temporibus quis, dolor quaerat excepturi mollitia maiores. Velit, esse ratione?
+        Officiis sed quod laborum nam neque et quos perspiciatis labore laudantium ullam, consectetur recusandae alias nihil illo odit eligendi in asperiores numquam voluptas ad aperiam? Pariatur harum voluptas ratione itaque.</p>
+    </div>
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function(){
+            side1.style.left = -window.pageYOffset + 'px';
+            side2.style.left = window.pageYOffset + 'px';
+        })
+    </script>
+</body>
+</html>
